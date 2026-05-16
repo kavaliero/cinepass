@@ -23,6 +23,9 @@ services:
       # CORS_ORIGIN n'est pas critique car nginx proxie /api -> meme origine.
       # On le laisse permissif pour les acces directs eventuels.
       CORS_ORIGIN: "*"
+      # Optionnel : pour faire tourner `docker-compose exec api node scripts/fetch-posters.mjs`
+      # Inscription gratuite : https://www.themoviedb.org/signup
+      TMDB_API_KEY: ${TMDB_API_KEY:-}
     volumes:
       - api-data:/app/apps/api/prisma
     healthcheck:

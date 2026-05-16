@@ -41,6 +41,11 @@ jobs:
             set -euo pipefail
             cd ~/cinepass
 
+            # Charge le .env pour avoir CINEPASS_PORT
+            set -a
+            source .env 2>/dev/null || true
+            set +a
+
             echo "==> git pull"
             git pull --ff-only
 
@@ -48,11 +53,11 @@ jobs:
             docker-compose up -d --build
 
             echo "==> wait for healthcheck (max 60s)"
+            PORT="${CINEPASS_PORT:-3081}"
             for i in {1..30}; do
-              # 3081 = port loopback de cinepass-web
-              if curl -sfu "${CINEPASS_USER:-x}:${CINEPASS_PASS:-x}" \
-                   http://127.0.0.1:${CINEPASS_PORT:-3081}/api/health > /dev/null 2>&1; then
-                echo "OK after ${i}s"
+              # /healthz est public (sans auth, exempte dans nginx.conf)
+              if curl -sf "http://127.0.0.1:${PORT}/healthz" > /dev/null 2>&1; then
+                echo "OK after $((i*2))s"
                 exit 0
               fi
               echo "  waiting... ($i/30)"

@@ -7,6 +7,9 @@ ARG PNPM_VERSION=9.12.0
 
 # ---------- Base ----------
 FROM node:${NODE_VERSION}-alpine AS base
+# Re-declare ARGs inside the stage (Docker quirk : ARGs avant FROM ne sont
+# accessibles que dans la ligne FROM elle-meme).
+ARG PNPM_VERSION
 ENV PNPM_HOME=/pnpm
 ENV PATH=$PNPM_HOME:$PATH
 RUN corepack enable && corepack prepare pnpm@${PNPM_VERSION} --activate
@@ -33,6 +36,7 @@ RUN pnpm --filter @cinepass/shared build \
 
 # ---------- Runtime ----------
 FROM node:${NODE_VERSION}-alpine AS runtime
+ARG PNPM_VERSION
 ENV PNPM_HOME=/pnpm
 ENV PATH=$PNPM_HOME:$PATH
 ENV NODE_ENV=production

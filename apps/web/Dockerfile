@@ -7,6 +7,7 @@ ARG PNPM_VERSION=9.12.0
 
 # ---------- Build ----------
 FROM node:${NODE_VERSION}-alpine AS build
+ARG PNPM_VERSION
 ENV PNPM_HOME=/pnpm
 ENV PATH=$PNPM_HOME:$PATH
 RUN corepack enable && corepack prepare pnpm@${PNPM_VERSION} --activate

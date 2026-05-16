@@ -70,9 +70,21 @@ openssl rand -base64 18
 
 ## Étape 3 : Build + démarrage
 
+Le Dockerfile utilise les features BuildKit (`--mount=type=cache`). Sur Compose v1, BuildKit n'est pas activé par défaut. Active-le pour cette session :
+
+```bash
+export DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1
+```
+
+Pour le rendre permanent, ajoute ces lignes à ton `~/.bashrc`.
+
+Puis :
+
 ```bash
 cd ~/cinepass
-docker compose up -d --build
+docker-compose up -d --build      # avec tiret pour compose v1
+# ou : docker compose up -d --build      # si tu as installé compose v2
 
 # Verifier que ça démarre
 docker compose logs -f

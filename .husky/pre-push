@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+# Pre-push hook : reproduit la pipeline CI (sauf e2e qui est trop long).
+# Si tu veux skip exceptionnellement : git push --no-verify
+# Si tu veux la full CI avec e2e : make ci
+
+set -e
+
+echo "==> pre-push : build shared + typecheck + lint + format-check + tests unit + build"
+make pre-push
+
+echo "==> pre-push OK"

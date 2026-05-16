@@ -51,10 +51,13 @@ info: ## Affiche versions Node / pnpm / Docker
 install: ## Installe toutes les dependencies
 	$(PNPM) install
 
-setup: install ## Premier setup (install + .env + db init)
+setup: install ## Premier setup (install + .env + db init + git hooks)
 	@$(NODE) scripts/setup-env.mjs
 	@$(MAKE) db-init
-	@$(NODE) -e "console.log('  Setup termine. Lance : make dev')"
+	@$(MAKE) build-shared
+	@$(NODE) -e "console.log('  Setup termine.')"
+	@$(NODE) -e "console.log('  - Hooks git installes (pre-commit + pre-push) via husky')"
+	@$(NODE) -e "console.log('  - Lance : make dev')"
 
 bootstrap: setup ## Alias de setup
 
@@ -156,11 +159,11 @@ audit: ## Audit de securite des dependencies
 # =============================================================================
 ##@ Pipelines (composes)
 
-check: typecheck lint format-check test ## Pre-commit : typecheck + lint + format + tests unit
+check: build-shared typecheck lint format-check test ## Pre-commit : build shared + typecheck + lint + format + tests unit
 
-pre-push: check e2e ## Avant push : check + e2e
+pre-push: check build ## Avant push : check + build (= ce que CI fait sans e2e, ~1 min)
 
-ci: install check build e2e ## Reproduit la pipeline CI complete en local
+ci: install check build e2e ## Reproduit la pipeline CI complete en local avec e2e (~5 min)
 
 # =============================================================================
 ##@ Database

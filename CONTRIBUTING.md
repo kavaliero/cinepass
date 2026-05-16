@@ -12,13 +12,42 @@ make db-reset
 make dev
 ```
 
-## Avant de commit
+## Hooks git automatiques
+
+Le `make setup` installe Husky qui pose deux hooks automatiques :
+
+**Pre-commit** (~10-20s) : lance sur `git commit`
+
+- `lint-staged` : ESLint --fix + Prettier --write **sur les fichiers staged uniquement**
+- `tsc --noEmit` : typecheck rapide sur tout le projet
+
+Si le hook detecte des problemes, ESLint/Prettier corrigent en place (tu dois re-stage) ou le commit est bloque.
+
+**Pre-push** (~1 min) : lance sur `git push`
+
+- Reproduit la pipeline CI sans les e2e : `make pre-push` = `make check + make build`
+- Si quelque chose foire localement, on evite de polluer GitHub Actions
+
+Pour bypass en urgence (a eviter) :
 
 ```bash
-make check   # typecheck + lint + format + tests
+git commit --no-verify -m "..."
+git push --no-verify
 ```
 
-Si `make check` échoue, **n'utilise pas `--no-verify`**. Corrige ou ouvre une issue.
+Pour reproduire la CI **complete** localement (avec e2e Playwright, ~5 min) :
+
+```bash
+make ci
+```
+
+## Avant de commit (alternative manuelle si tu veux verifier sans Husky)
+
+```bash
+make check   # build shared + typecheck + lint + format + tests unit
+```
+
+Si `make check` echoue, corrige avant de commit.
 
 ## Conventions de commit
 
@@ -83,7 +112,7 @@ La liste vit dans `apps/api/prisma/data/films.json`. Pour en ajouter un :
   "title": "Le Roi Lion 2",
   "year": 1998,
   "director": "Darrell Rooney et Rob LaDuca",
-  "ageBracket": "3-5"
+  "ageBracket": "3-5",
 }
 ```
 

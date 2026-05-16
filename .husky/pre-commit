@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+# Pre-commit hook : lint + format + typecheck rapide sur les fichiers staged.
+# Si tu veux skip exceptionnellement : git commit --no-verify
+# Pour skip durablement : configure HUSKY=0 dans ton shell.
+
+set -e
+
+echo "==> lint-staged (eslint --fix + prettier --write sur les fichiers staged)"
+pnpm exec lint-staged
+
+echo "==> typecheck (build shared + tsc --noEmit sur api + web)"
+pnpm --filter @cinepass/shared build > /dev/null
+pnpm typecheck
+
+echo "==> pre-commit OK"

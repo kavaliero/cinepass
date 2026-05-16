@@ -6,6 +6,7 @@
 ## Vue d'ensemble
 
 **Cinépass** = webapp watchlist familiale de films, triés par tranche d'âge.
+
 - 471 films de base (issus d'une liste SensCritique)
 - 7 tranches : `0-2` / `3-5` / `6-8` / `9-12` / `13-15` / `16-17` / `18+`
 - 3 statuts : `TO_WATCH` (par défaut) / `WATCHED` / `SKIP`
@@ -50,6 +51,15 @@
 - ❌ Désactiver une règle ESLint avec `// eslint-disable-next-line` sans commentaire expliquant pourquoi.
 - ❌ Créer un fichier `.md` à la racine sans qu'il soit indexé dans le README.
 - ❌ Ajouter une dépendance "lourde" (Redux, Material UI, axios, lodash...) sans le justifier dans la PR.
+
+## Hooks git automatiques
+
+Le repo a Husky installé. Au boot via `make setup` ou `pnpm install`, les hooks suivants sont actifs :
+
+- **pre-commit** : `lint-staged` + `typecheck`. Bloque le commit si erreur.
+- **pre-push** : `make pre-push` = build shared + check + build. Reproduit la CI (sans e2e).
+
+Bypass possible mais à éviter : `--no-verify` sur commit/push.
 
 ## Pour les commits et PRs
 

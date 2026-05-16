@@ -47,13 +47,16 @@ WORKDIR /app
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 COPY apps/api/package.json ./apps/api/
 COPY packages/shared/package.json ./packages/shared/
-RUN pnpm install --frozen-lockfile --prod \
- && pnpm --filter @cinepass/api exec prisma generate
+RUN pnpm install --frozen-lockfile --prod
 
-# Code build + assets Prisma + seed data + entrypoint
+# Schema Prisma (necessaire AVANT prisma generate)
+COPY apps/api/prisma ./apps/api/prisma
+RUN pnpm --filter @cinepass/api exec prisma generate
+
+# Code build + entrypoint
 COPY --from=build /app/apps/api/dist ./apps/api/dist
 COPY --from=build /app/packages/shared/dist ./packages/shared/dist
-COPY apps/api/prisma ./apps/api/prisma
+COPY apps/api/scripts ./apps/api/scripts
 COPY apps/api/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 

@@ -1,0 +1,80 @@
+name: Deploy
+
+# Se declenche apres que la CI passe en vert sur main.
+# Possibilite de re-deployer manuellement via workflow_dispatch.
+on:
+  workflow_run:
+    workflows: ['CI']
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false # ne pas annuler un deploy en cours
+
+jobs:
+  deploy:
+    name: Deploy to Fortress
+    runs-on: ubuntu-latest
+    # Skip si CI a echoue
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    timeout-minutes: 15
+    steps:
+      - name: Checkout code (pour acceder a scripts/smoke.mjs)
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.11.0'
+
+      - name: SSH deploy on Fortress
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: 22
+          script_stop: true # arrete sur la 1ere erreur
+          script: |
+            set -euo pipefail
+            cd ~/cinepass
+
+            echo "==> git pull"
+            git pull --ff-only
+
+            echo "==> docker-compose up -d --build"
+            docker-compose up -d --build
+
+            echo "==> wait for healthcheck (max 60s)"
+            for i in {1..30}; do
+              # 3081 = port loopback de cinepass-web
+              if curl -sfu "${CINEPASS_USER:-x}:${CINEPASS_PASS:-x}" \
+                   http://127.0.0.1:${CINEPASS_PORT:-3081}/api/health > /dev/null 2>&1; then
+                echo "OK after ${i}s"
+                exit 0
+              fi
+              echo "  waiting... ($i/30)"
+              sleep 2
+            done
+            echo "KO : healthcheck failed apres 60s"
+            docker-compose ps
+            docker-compose logs --tail=30
+            exit 1
+
+      - name: Smoke tests post-deploy
+        env:
+          SMOKE_URL: ${{ secrets.SMOKE_URL }}
+          CINEPASS_USER: ${{ secrets.SMOKE_USER }}
+          CINEPASS_PASS: ${{ secrets.SMOKE_PASS }}
+        run: node scripts/smoke.mjs "$SMOKE_URL"
+
+      - name: Deploy summary
+        if: always()
+        run: |
+          echo "## Deploy ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Commit : [\`${{ github.sha }}\`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})" >> $GITHUB_STEP_SUMMARY
+          echo "- Author : ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "- URL : ${{ secrets.SMOKE_URL }}" >> $GITHUB_STEP_SUMMARY

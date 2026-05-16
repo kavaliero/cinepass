@@ -164,6 +164,115 @@ SMOKE_URL=https://cinepass.duckdns.org make smoke
 # 5 checks doivent passer
 ```
 
+## CI/CD : auto-deploy sur push main
+
+Une fois la mise en prod manuelle réussie (étapes 1-5 ci-dessus), tu peux activer le déploiement automatique. À chaque `git push origin main` qui passe la CI :
+1. GitHub Actions SSH dans Fortress
+2. `git pull && docker-compose up -d --build`
+3. Attend que `/api/health` réponde
+4. Lance le smoke test depuis l'extérieur via `https://cinepass.duckdns.org`
+5. Marque le workflow vert / rouge dans GH
+
+### Setup en une fois
+
+#### 1. Génère une SSH key dédiée au deploy
+
+Sur ton **PC dev** (PowerShell) :
+
+```powershell
+ssh-keygen -t ed25519 -f "$HOME\.ssh\cinepass_deploy" -C "github-actions-deploy" -N '""'
+```
+
+Crée :
+- `cinepass_deploy` (clé privée → ira dans GH Secrets)
+- `cinepass_deploy.pub` (clé publique → ira sur Fortress)
+
+#### 2. Ajoute la clé publique sur Fortress
+
+Copie le contenu de la clé publique :
+```powershell
+Get-Content "$HOME\.ssh\cinepass_deploy.pub" | Set-Clipboard
+```
+
+Puis sur Fortress :
+```bash
+nano ~/.ssh/authorized_keys
+```
+
+Colle la clé en bas, **avec une restriction de commande** (le user de cette key ne pourra que faire les actions de deploy) :
+
+```
+command="cd /home/kavaliero/cinepass && git pull --ff-only && /usr/local/bin/docker-compose up -d --build",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty ssh-ed25519 AAAA...<le contenu de cinepass_deploy.pub>...
+```
+
+> Note : si t'as la flemme de la restriction `command="..."`, tu peux coller juste la ligne `ssh-ed25519 AAAA...` sans le prefix. Moins safe (la key permet tout) mais plus simple. Tu peux mettre la restriction plus tard.
+
+Teste depuis ton PC :
+```powershell
+ssh -i "$HOME\.ssh\cinepass_deploy" kavaliero@<IP_FORTRESS> "echo OK"
+# Doit afficher OK (ou faire le deploy si t'as la restriction command=)
+```
+
+#### 3. Configure les GitHub Secrets
+
+Va sur https://github.com/kavaliero/cinepass/settings/secrets/actions → **New repository secret**
+
+Crée ces secrets :
+
+| Nom | Valeur |
+|-----|--------|
+| `VPS_HOST` | IP ou hostname de Fortress (ex: `62.210.131.191`) |
+| `VPS_USER` | `kavaliero` |
+| `VPS_SSH_KEY` | Contenu complet de `cinepass_deploy` (avec les `-----BEGIN` et `-----END`) - copie via `Get-Content $HOME\.ssh\cinepass_deploy \| Set-Clipboard` |
+| `SMOKE_URL` | `https://cinepass.duckdns.org` |
+| `SMOKE_USER` | `kavaliero` |
+| `SMOKE_PASS` | Le même password que dans ton `.env` sur Fortress |
+
+#### 4. Trigger un premier deploy
+
+Pour tester sans changement de code :
+- Va sur https://github.com/kavaliero/cinepass/actions/workflows/deploy.yml
+- Clique sur **Run workflow** (workflow_dispatch)
+- Sélectionne la branche `main` + clique le bouton
+
+Ou pousse un commit :
+```powershell
+git commit --allow-empty -m "ci: trigger deploy test"
+git push
+```
+
+Suis le workflow dans l'onglet Actions. Si vert → ton site est à jour. Si rouge → regarde les logs (généralement c'est un secret mal configuré ou un problème SSH).
+
+### Workflow normal après setup
+
+```powershell
+# Tu code, tu commit
+git add .
+git commit -m "feat: ajoute le random picker"
+git push
+
+# La CI run (~3 min), si verte le deploy se lance auto (~1 min)
+# Tu peux suivre dans https://github.com/kavaliero/cinepass/actions
+```
+
+### Rollback rapide
+
+Si un deploy casse la prod :
+
+```powershell
+# Sur ton PC
+git revert HEAD          # cree un commit qui defait le dernier
+git push                 # re-trigger le pipeline -> redeploy le code precedent
+```
+
+Ou en urgence directement sur Fortress :
+```bash
+ssh kavaliero@fortress
+cd ~/cinepass
+git reset --hard HEAD~1
+docker-compose up -d --build
+```
+
 ## Maintenance
 
 ### Mise à jour de l'app

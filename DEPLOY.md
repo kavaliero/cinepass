@@ -60,6 +60,12 @@ Contenu `.env` :
 CINEPASS_USER=kavaliero
 CINEPASS_PASS=<openssl rand -base64 18>   # gen un vrai password long
 CINEPASS_PORT=3081
+CINEPASS_BIND_ADDR=127.0.0.1              # IMPORTANT : loopback only, Caddy proxie depuis le host
+```
+
+Tu n'as **plus besoin** du `docker-compose.override.yml` : tout est piloté par `.env`. Si tu en as deja un d'un essai precedent, supprime-le :
+```bash
+rm -f docker-compose.override.yml
 ```
 
 Astuce pour générer un password sympa :

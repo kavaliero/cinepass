@@ -1,0 +1,59 @@
+# Stack production-like pour Cinepass.
+# Usage:
+#   docker compose up -d --build
+#   docker compose logs -f
+#   docker compose down            # arret
+#   docker compose down -v         # arret + suppression du volume SQLite
+
+name: cinepass
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    container_name: cinepass-api
+    restart: unless-stopped
+    expose:
+      - "3001"
+    environment:
+      NODE_ENV: production
+      PORT: "3001"
+      DATABASE_URL: "file:/app/apps/api/prisma/cinepass.db"
+      # CORS_ORIGIN n'est pas critique car nginx proxie /api -> meme origine.
+      # On le laisse permissif pour les acces directs eventuels.
+      CORS_ORIGIN: "*"
+    volumes:
+      - api-data:/app/apps/api/prisma
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3001/api/health"]
+      interval: 15s
+      timeout: 3s
+      start_period: 20s
+      retries: 3
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    container_name: cinepass-web
+    restart: unless-stopped
+    ports:
+      - "${CINEPASS_PORT:-8080}:80"
+    environment:
+      # HTTP Basic Auth (genere /etc/nginx/.htpasswd au boot).
+      # Le `:?` fait fail compose si la var n'est pas definie (securite).
+      CINEPASS_USER: ${CINEPASS_USER:?CINEPASS_USER doit etre defini (cf .env.example)}
+      CINEPASS_PASS: ${CINEPASS_PASS:?CINEPASS_PASS doit etre defini (cf .env.example)}
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost/healthz"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+
+volumes:
+  api-data:
+    driver: local

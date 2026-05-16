@@ -1,0 +1,45 @@
+# Dependencies
+**/node_modules
+
+# Build outputs
+**/dist
+**/build
+**/.next
+**/.turbo
+**/*.tsbuildinfo
+
+# Tests / coverage
+**/coverage
+**/playwright-report
+**/test-results
+**/playwright/.cache
+
+# Local DB / env
+**/*.db
+**/*.db-journal
+**/*.sqlite
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Git / IDE
+.git
+.github
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.yml
+Dockerfile
+**/Dockerfile
+.dockerignore
+**/.dockerignore
+
+# Docs (pas besoin dans l'image)
+*.md
+!README.md
+LICENSE

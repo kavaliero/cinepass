@@ -1,0 +1,2828 @@
+[
+  {
+    "title": "(500) jours ensemble",
+    "year": 2009,
+    "director": "Marc Webb",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "17 ans encore",
+    "year": 2009,
+    "director": "Burr Steers",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "2001 : L'Odyssée de l'espace",
+    "year": 1968,
+    "director": "Stanley Kubrick",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "28 jours plus tard",
+    "year": 2002,
+    "director": "Danny Boyle",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "30 ans sinon rien",
+    "year": 2004,
+    "director": "Gary Winick",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "300",
+    "year": 2007,
+    "director": "Zack Snyder",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "58 minutes pour vivre",
+    "year": 1990,
+    "director": "Renny Harlin",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "60 secondes chrono",
+    "year": 2000,
+    "director": "Dominic Sena",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "7 Kogustaki Mucize",
+    "year": 2019,
+    "director": "Mehmet Ada Öztekin",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "8 femmes",
+    "year": 2002,
+    "director": "François Ozon",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "8 Mile",
+    "year": 2002,
+    "director": "Curtis Hanson",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "A.I. Intelligence Artificielle",
+    "year": 2001,
+    "director": "Steven Spielberg",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Ace Ventura en Afrique",
+    "year": 1995,
+    "director": "Steve Oedekerk",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Ace Ventura, détective pour chiens et chats",
+    "year": 1994,
+    "director": "Tom Shadyac",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Aladdin",
+    "year": 1992,
+    "director": "John Musker et Ron Clements",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Alerte rouge",
+    "year": 2022,
+    "director": "Domee Shi",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Alien - La Résurrection",
+    "year": 1997,
+    "director": "Jean-Pierre Jeunet",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Alien - Le 8ème Passager",
+    "year": 1979,
+    "director": "Ridley Scott",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Alien³",
+    "year": 1992,
+    "director": "David Fincher",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "American Beauty",
+    "year": 1999,
+    "director": "Sam Mendes",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "American History X",
+    "year": 1998,
+    "director": "Tony Kaye",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "American Nightmare",
+    "year": 2013,
+    "director": "James DeMonaco",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "American Pie",
+    "year": 1999,
+    "director": "Paul Weitz et Chris Weitz",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "American Pie 2",
+    "year": 2001,
+    "director": "J.B. Rogers",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "American Psycho",
+    "year": 2000,
+    "director": "Mary Harron",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "American Sniper",
+    "year": 2014,
+    "director": "Clint Eastwood",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Ant-Man",
+    "year": 2015,
+    "director": "Peyton Reed",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Ant-Man et la Guêpe",
+    "year": 2018,
+    "director": "Peyton Reed",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "director": "Francis Ford Coppola",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Aquaman",
+    "year": 2018,
+    "director": "James Wan",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Arrietty - Le Petit monde des Chapardeurs",
+    "year": 2010,
+    "director": "Hiromasa Yonebayashi",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Arrête-moi si tu peux",
+    "year": 2002,
+    "director": "Steven Spielberg",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Arthur et les Minimoys",
+    "year": 2006,
+    "director": "Luc Besson",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Astérix & Obélix - Mission Cléopâtre",
+    "year": 2002,
+    "director": "Alain Chabat",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Au revoir à jamais",
+    "year": 1996,
+    "director": "Renny Harlin",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Avatar",
+    "year": 2009,
+    "director": "James Cameron",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Avengers",
+    "year": 2012,
+    "director": "Joss Whedon",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Avengers - L'ère d'Ultron",
+    "year": 2015,
+    "director": "Joss Whedon",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "director": "Anthony Russo et Joe Russo",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Avengers: Infinity War",
+    "year": 2018,
+    "director": "Anthony Russo et Joe Russo",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Bad Boys",
+    "year": 1995,
+    "director": "Michael Bay",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Bad Boys II",
+    "year": 2003,
+    "director": "Michael Bay",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Batman Begins",
+    "year": 2005,
+    "director": "Christopher Nolan",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Beethoven",
+    "year": 1992,
+    "director": "Brian Levant",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Bienvenue chez les Ch'tis",
+    "year": 2008,
+    "director": "Dany Boon",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Bienvenue à Gattaca",
+    "year": 1997,
+    "director": "Andrew Niccol",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Bienvenue à Zombieland",
+    "year": 2009,
+    "director": "Ruben Fleischer",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Black Panther",
+    "year": 2018,
+    "director": "Ryan Coogler",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Black Panther: Wakanda Forever",
+    "year": 2022,
+    "director": "Ryan Coogler",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Black Swan",
+    "year": 2010,
+    "director": "Darren Aronofsky",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Blade",
+    "year": 1998,
+    "director": "Stephen Norrington",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Blood Diamond",
+    "year": 2006,
+    "director": "Edward Zwick",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Blow",
+    "year": 2001,
+    "director": "Ted Demme",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Braveheart",
+    "year": 1995,
+    "director": "Mel Gibson",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Bruce tout-puissant",
+    "year": 2003,
+    "director": "Tom Shadyac",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Cars - Quatre Roues",
+    "year": 2006,
+    "director": "John Lasseter et Joe Ranft",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Charlie et la Chocolaterie",
+    "year": 2005,
+    "director": "Tim Burton",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Chérie, j'ai rétréci les gosses",
+    "year": 1989,
+    "director": "Joe Johnston",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Click",
+    "year": 2006,
+    "director": "Frank Coraci",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Constantine",
+    "year": 2005,
+    "director": "Francis Lawrence",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Coup de foudre à Notting Hill",
+    "year": 1999,
+    "director": "Roger Michell",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Cube",
+    "year": 1997,
+    "director": "Vincenzo Natali",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Cyrano de Bergerac",
+    "year": 1990,
+    "director": "Jean-Paul Rappeneau",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Danse avec les loups",
+    "year": 1990,
+    "director": "Kevin Costner",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Deadpool",
+    "year": 2016,
+    "director": "Tim Miller",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Deadpool & Wolverine",
+    "year": 2024,
+    "director": "Shawn Levy",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Deadpool 2",
+    "year": 2018,
+    "director": "David Leitch",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Desperado",
+    "year": 1995,
+    "director": "Robert Rodriguez",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Destination finale",
+    "year": 2000,
+    "director": "James Wong",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Dirty Dancing",
+    "year": 1987,
+    "director": "Emile Ardolino",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Divergente",
+    "year": 2014,
+    "director": "Neil Burger",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Django Unchained",
+    "year": 2012,
+    "director": "Quentin Tarantino",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Docteur Patch",
+    "year": 1998,
+    "director": "Tom Shadyac",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Doctor Strange",
+    "year": 2016,
+    "director": "Scott Derrickson",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "year": 2022,
+    "director": "Sam Raimi",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Dogma",
+    "year": 1999,
+    "director": "Kevin Smith",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Donnie Darko",
+    "year": 2001,
+    "director": "Richard Kelly",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Dragons",
+    "year": 2010,
+    "director": "Chris Sanders et Dean Deblois",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Dragons 2",
+    "year": 2014,
+    "director": "Dean Deblois",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Dragons 3 - Le Monde caché",
+    "year": 2019,
+    "director": "Dean Deblois",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "E.T. l'extra-terrestre",
+    "year": 1982,
+    "director": "Steven Spielberg",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Easy Girl",
+    "year": 2010,
+    "director": "Will Gluck",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Edward aux mains d'argent",
+    "year": 1990,
+    "director": "Tim Burton",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Elephant",
+    "year": 2003,
+    "director": "Gus Van Sant",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Elephant Man",
+    "year": 1980,
+    "director": "David Lynch",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Encanto : La Fantastique Famille Madrigal",
+    "year": 2021,
+    "director": "Jared Bush, Byron Howard et Charise Castro Smith",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "year": 2004,
+    "director": "Michel Gondry",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Fame",
+    "year": 2009,
+    "director": "Kevin Tancharoen",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Fast and Furious",
+    "year": 2001,
+    "director": "Rob Cohen",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "director": "David Fincher",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Flashdance",
+    "year": 1983,
+    "director": "Adrian Lyne",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "director": "Robert Zemeckis",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Freddy - Les Griffes de la nuit",
+    "year": 2010,
+    "director": "Samuel Bayer",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Free Guy",
+    "year": 2021,
+    "director": "Shawn Levy",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Frère des ours",
+    "year": 2003,
+    "director": "Aaron Blaise et Bob Walker",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Full Metal Jacket",
+    "year": 1987,
+    "director": "Stanley Kubrick",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Gatsby le magnifique",
+    "year": 2013,
+    "director": "Baz Luhrmann",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Get Out",
+    "year": 2017,
+    "director": "Jordan Peele",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Ghost",
+    "year": 1990,
+    "director": "Jerry Zucker",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Gladiator",
+    "year": 2000,
+    "director": "Ridley Scott",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Goldfinger",
+    "year": 1964,
+    "director": "Guy Hamilton",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Gone Girl",
+    "year": 2014,
+    "director": "David Fincher",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Gran Torino",
+    "year": 2008,
+    "director": "Clint Eastwood",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Grease",
+    "year": 1978,
+    "director": "Randal Kleiser",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Grease 2",
+    "year": 1982,
+    "director": "Patricia Birch",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Green Book - Sur les routes du Sud",
+    "year": 2018,
+    "director": "Peter Farrelly",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Gremlins",
+    "year": 1984,
+    "director": "Joe Dante",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Gremlins 2 - La Nouvelle Génération",
+    "year": 1990,
+    "director": "Joe Dante",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Hair",
+    "year": 1979,
+    "director": "Miloš Forman",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Harry Potter et l'ordre du phénix",
+    "year": 2007,
+    "director": "David Yates",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Harry Potter et la chambre des secrets",
+    "year": 2002,
+    "director": "Chris Columbus",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Harry Potter et la coupe de feu",
+    "year": 2005,
+    "director": "Mike Newell",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Harry Potter et le prince de sang-mêlé",
+    "year": 2009,
+    "director": "David Yates",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Harry Potter et le prisonnier d'Azkaban",
+    "year": 2004,
+    "director": "Alfonso Cuarón",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Harry Potter et les reliques de la mort - 1ère partie",
+    "year": 2010,
+    "director": "David Yates",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Harry Potter et les reliques de la mort - 2ème partie",
+    "year": 2011,
+    "director": "David Yates",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Harry Potter à l'école des sorciers",
+    "year": 2001,
+    "director": "Chris Columbus",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Hellboy",
+    "year": 2004,
+    "director": "Guillermo del Toro",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Her",
+    "year": 2013,
+    "director": "Spike Jonze",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Hercule",
+    "year": 1997,
+    "director": "Ron Clements et John Musker",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "High School Musical - Premiers pas sur scène",
+    "year": 2006,
+    "director": "Kenny Ortega",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Highlander",
+    "year": 1986,
+    "director": "Russell Mulcahy",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Hocus Pocus - Les Trois Sorcières",
+    "year": 1993,
+    "director": "Kenny Ortega",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Hollow Man - L'Homme sans ombre",
+    "year": 2000,
+    "director": "Paul Verhoeven",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Hook ou la revanche du Capitaine Crochet",
+    "year": 1991,
+    "director": "Steven Spielberg",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Hot Fuzz",
+    "year": 2007,
+    "director": "Edgar Wright",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "How High",
+    "year": 2001,
+    "director": "Jesse Dylan",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Hunger Games",
+    "year": 2012,
+    "director": "Gary Ross",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Hunger Games - L'Embrasement",
+    "year": 2013,
+    "director": "Francis Lawrence",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Hunger Games : La Révolte, partie 1",
+    "year": 2014,
+    "director": "Francis Lawrence",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Hunger Games : La Révolte, partie 2",
+    "year": 2015,
+    "director": "Francis Lawrence",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Hôtel Transylvanie",
+    "year": 2012,
+    "director": "Genndy Tartakovsky",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Hôtel Transylvanie 2",
+    "year": 2015,
+    "director": "Genndy Tartakovsky",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Hôtel Transylvanie 3 - Des vacances monstrueuses",
+    "year": 2018,
+    "director": "Genndy Tartakovsky",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Il faut sauver le soldat Ryan",
+    "year": 1998,
+    "director": "Steven Spielberg",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Il était une fois dans l'Ouest",
+    "year": 1968,
+    "director": "Sergio Leone",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Imitation Game",
+    "year": 2014,
+    "director": "Morten Tyldum",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "director": "Christopher Nolan",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Inglourious Basterds",
+    "year": 2009,
+    "director": "Quentin Tarantino",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Insaisissables",
+    "year": 2013,
+    "director": "Louis Leterrier",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "director": "Christopher Nolan",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Into the Wild",
+    "year": 2007,
+    "director": "Sean Penn",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Intouchables",
+    "year": 2011,
+    "director": "Olivier Nakache et Eric Toledano",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Ip Man - La Légende du grand maître",
+    "year": 2008,
+    "director": "Wilson Yip",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Ip Man 2 : Le Retour du grand maître",
+    "year": 2010,
+    "director": "Wilson Yip",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Ip Man 3",
+    "year": 2015,
+    "director": "Wilson Yip",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Iron Man",
+    "year": 2008,
+    "director": "Jon Favreau",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Iron Man 2",
+    "year": 2010,
+    "director": "Jon Favreau",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Iron Man 3",
+    "year": 2013,
+    "director": "Shane Black",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Jack",
+    "year": 1996,
+    "director": "Francis Ford Coppola",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Jason Bourne",
+    "year": 2016,
+    "director": "Paul Greengrass",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Je suis une légende",
+    "year": 2007,
+    "director": "Francis Lawrence",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Jeux d'enfants",
+    "year": 2003,
+    "director": "Yann Samuell",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "John Rambo",
+    "year": 2008,
+    "director": "Sylvester Stallone",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "John Wick",
+    "year": 2014,
+    "director": "Chad Stahelski et David Leitch",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Joker",
+    "year": 2019,
+    "director": "Todd Phillips",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Ju-on: The Grudge",
+    "year": 2002,
+    "director": "Takashi Shimizu",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Jumanji",
+    "year": 1995,
+    "director": "Joe Johnston",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Jurassic Park",
+    "year": 1993,
+    "director": "Steven Spielberg",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Kick-Ass",
+    "year": 2010,
+    "director": "Matthew Vaughn",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Kiki la petite sorcière",
+    "year": 1989,
+    "director": "Hayao Miyazaki",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Kill Bill - Volume 1",
+    "year": 2003,
+    "director": "Quentin Tarantino",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Kill Bill - Volume 2",
+    "year": 2004,
+    "director": "Quentin Tarantino",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Kingsman - Le Cercle d'or",
+    "year": 2017,
+    "director": "Matthew Vaughn",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Kingsman - Services secrets",
+    "year": 2014,
+    "director": "Matthew Vaughn",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Kung Fu Panda",
+    "year": 2008,
+    "director": "Mark Osborne et John Stevenson",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Kung Fu Panda 2",
+    "year": 2011,
+    "director": "Jennifer Yuh Nelson",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Kuzco, l'empereur mégalo",
+    "year": 2000,
+    "director": "Mark Dindal",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "L'Aile ou la Cuisse",
+    "year": 1976,
+    "director": "Claude Zidi",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "L'Arme fatale",
+    "year": 1987,
+    "director": "Richard Donner",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "L'Arme fatale 2",
+    "year": 1989,
+    "director": "Richard Donner",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "L'Arme fatale 3",
+    "year": 1992,
+    "director": "Richard Donner",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "L'Arme fatale 4",
+    "year": 1998,
+    "director": "Richard Donner",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "L'Auberge espagnole",
+    "year": 2002,
+    "director": "Cédric Klapisch",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "L'Effet papillon",
+    "year": 2004,
+    "director": "Eric Bress et J. Mackye Gruber",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "L'Empire contre-attaque",
+    "year": 1980,
+    "director": "Irvin Kershner",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "L'Exorciste",
+    "year": 1973,
+    "director": "William Friedkin",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "L'Histoire sans fin",
+    "year": 1984,
+    "director": "Wolfgang Petersen",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "L'Histoire sans fin 3 : Retour à Fantasia",
+    "year": 1994,
+    "director": "Peter MacDonald",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "L'Histoire sans fin II",
+    "year": 1990,
+    "director": "George Miller (II)",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "L'Homme qui murmurait à l'oreille des chevaux",
+    "year": 1998,
+    "director": "Robert Redford",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "L'Incroyable Hulk",
+    "year": 2008,
+    "director": "Louis Leterrier",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "L'Âge de glace",
+    "year": 2002,
+    "director": "Chris Wedge et Carlos Saldanha",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "L'Âge de glace 2",
+    "year": 2006,
+    "director": "Carlos Saldanha",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "L'Étrange Histoire de Benjamin Button",
+    "year": 2008,
+    "director": "David Fincher",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "L'Étrange Noël de Monsieur Jack",
+    "year": 1993,
+    "director": "Henry Selick",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "La Belle et la Bête",
+    "year": 1991,
+    "director": "Gary Trousdale et Kirk Wise",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "La Belle et le Clochard",
+    "year": 1955,
+    "director": "Hamilton Luske, Clyde Geronimi et Wilfred Jackson",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "La Boum",
+    "year": 1980,
+    "director": "Claude Pinoteau",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "La Bête du Gévaudan",
+    "year": 2003,
+    "director": "Patrick Volson",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "La Chèvre",
+    "year": 1981,
+    "director": "Francis Veber",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "La Cité de la peur",
+    "year": 1994,
+    "director": "Alain Berbérian",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "La Grande Aventure LEGO",
+    "year": 2014,
+    "director": "Phil Lord et Christopher Miller",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "La Grande Vadrouille",
+    "year": 1966,
+    "director": "Gérard Oury",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "La Guerre des étoiles",
+    "year": 1977,
+    "director": "George Lucas",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "La Haine",
+    "year": 1995,
+    "director": "Mathieu Kassovitz",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "La La Land",
+    "year": 2016,
+    "director": "Damien Chazelle",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "La Ligne verte",
+    "year": 1999,
+    "director": "Frank Darabont",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "La Liste de Schindler",
+    "year": 1993,
+    "director": "Steven Spielberg",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "La Planète des singes - L'Affrontement",
+    "year": 2014,
+    "director": "Matt Reeves",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "La Planète des singes - Les Origines",
+    "year": 2011,
+    "director": "Rupert Wyatt",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "La Planète des singes - Suprématie",
+    "year": 2017,
+    "director": "Matt Reeves",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "La Reine des Neiges",
+    "year": 2013,
+    "director": "Chris Buck et Jennifer Lee",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "La Reine des Neiges II",
+    "year": 2019,
+    "director": "Chris Buck et Jennifer Lee",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "La Ruée vers l'or",
+    "year": 1925,
+    "director": "Charlie Chaplin",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "La Soupe aux choux",
+    "year": 1981,
+    "director": "Jean Girault",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "La Tour Montparnasse infernale",
+    "year": 2001,
+    "director": "Charles Nemes",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "La Vie est belle",
+    "year": 1997,
+    "director": "Roberto Benigni",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Las Vegas 21",
+    "year": 2008,
+    "director": "Robert Luketic",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Las Vegas Parano",
+    "year": 1998,
+    "director": "Terry Gilliam",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Last Action Hero",
+    "year": 1993,
+    "director": "John McTiernan",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Baiser mortel du dragon",
+    "year": 2001,
+    "director": "Chris Nahon",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Le Bon, la Brute et le Truand",
+    "year": 1966,
+    "director": "Sergio Leone",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Le Cercle : The Ring",
+    "year": 2002,
+    "director": "Gore Verbinski",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Le Cercle des poètes disparus",
+    "year": 1989,
+    "director": "Peter Weir",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Le Château ambulant",
+    "year": 2004,
+    "director": "Hayao Miyazaki",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Le Château dans le ciel",
+    "year": 1986,
+    "director": "Hayao Miyazaki",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Le Cinquième Élément",
+    "year": 1997,
+    "director": "Luc Besson",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Comte de Monte-Cristo",
+    "year": 2024,
+    "director": "Alexandre de La Patellière et Matthieu Delaporte",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Le Dernier des Mohicans",
+    "year": 1992,
+    "director": "Michael Mann",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Le Dernier Pub avant la fin du monde",
+    "year": 2013,
+    "director": "Edgar Wright",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Le Diable s'habille en Prada",
+    "year": 2006,
+    "director": "David Frankel",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Le Dîner de cons",
+    "year": 1998,
+    "director": "Francis Veber",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Fabuleux Destin d'Amélie Poulain",
+    "year": 2001,
+    "director": "Jean-Pierre Jeunet",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Le Flic de Beverly Hills - Axel F.",
+    "year": 2024,
+    "director": "Mark Molloy",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Le Grand Bleu",
+    "year": 1988,
+    "director": "Luc Besson",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Le Grinch",
+    "year": 2000,
+    "director": "Ron Howard",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Le Géant de fer",
+    "year": 1999,
+    "director": "Brad Bird",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Le Jour d'après",
+    "year": 2004,
+    "director": "Roland Emmerich",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Labyrinthe de Pan",
+    "year": 2006,
+    "director": "Guillermo del Toro",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Le Livre de la jungle",
+    "year": 1967,
+    "director": "Wolfgang Reitherman",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Le Loup de Wall Street",
+    "year": 2013,
+    "director": "Martin Scorsese",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Le Masque de Zorro",
+    "year": 1998,
+    "director": "Martin Campbell",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Monde de Narnia - L'Odyssée du Passeur d'aurore",
+    "year": 2010,
+    "director": "Michael Apted",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Monde de Narnia - Le Lion, la Sorcière blanche et l'Armoire magique",
+    "year": 2005,
+    "director": "Andrew Adamson",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Monde de Narnia - Le Prince Caspian",
+    "year": 2008,
+    "director": "Andrew Adamson",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Monde de Nemo",
+    "year": 2003,
+    "director": "Andrew Stanton et Lee Unkrich",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Le Nombre 23",
+    "year": 2007,
+    "director": "Joel Schumacher",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Le Parrain",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Le Parrain - 2e Partie",
+    "year": 1974,
+    "director": "Francis Ford Coppola",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Le Parrain - 3e Partie",
+    "year": 1990,
+    "director": "Francis Ford Coppola",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Le Petit Monde des Borrowers",
+    "year": 1997,
+    "director": "Peter Hewitt",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Le Prestige",
+    "year": 2006,
+    "director": "Christopher Nolan",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Le père Noël est une ordure",
+    "year": 1982,
+    "director": "Jean-Marie Poiré",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Retour du Jedi",
+    "year": 1983,
+    "director": "Richard Marquand",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Roi Lion",
+    "year": 1994,
+    "director": "Roger Allers et Rob Minkoff",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Le Royaume des chats",
+    "year": 2002,
+    "director": "Hiroyuki Morita",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Le Seigneur des anneaux - La Communauté de l'anneau",
+    "year": 2001,
+    "director": "Peter Jackson",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Seigneur des anneaux - Le Retour du roi",
+    "year": 2003,
+    "director": "Peter Jackson",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Seigneur des anneaux - Les Deux Tours",
+    "year": 2002,
+    "director": "Peter Jackson",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Le Silence des agneaux",
+    "year": 1991,
+    "director": "Jonathan Demme",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Le Terminal",
+    "year": 2004,
+    "director": "Steven Spielberg",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Le Tombeau des lucioles",
+    "year": 1988,
+    "director": "Isao Takahata",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Le Transporteur",
+    "year": 2002,
+    "director": "Louis Leterrier et Corey Yuen",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Le Voyage de Chihiro",
+    "year": 2001,
+    "director": "Hayao Miyazaki",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Les Affranchis",
+    "year": 1990,
+    "director": "Martin Scorsese",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Les Aristochats",
+    "year": 1970,
+    "director": "Wolfgang Reitherman",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Les Autres",
+    "year": 2001,
+    "director": "Alejandro Amenábar",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Les Aventures de Rabbi Jacob",
+    "year": 1973,
+    "director": "Gérard Oury",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Les Aventuriers de l'arche perdue",
+    "year": 1981,
+    "director": "Steven Spielberg",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Les Blues Brothers",
+    "year": 1980,
+    "director": "John Landis",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Les Bronzés",
+    "year": 1978,
+    "director": "Patrice Leconte",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Les Bronzés font du ski",
+    "year": 1979,
+    "director": "Patrice Leconte",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Les Choristes",
+    "year": 2004,
+    "director": "Christophe Barratier",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Les Gardiens de la galaxie",
+    "year": 2014,
+    "director": "James Gunn",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Les Gardiens de la galaxie Vol. 2",
+    "year": 2017,
+    "director": "James Gunn",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Les Gardiens de la galaxie Vol. 3",
+    "year": 2023,
+    "director": "James Gunn",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Les Goonies",
+    "year": 1985,
+    "director": "Richard Donner",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Les Indestructibles",
+    "year": 2004,
+    "director": "Brad Bird",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Les Indestructibles 2",
+    "year": 2018,
+    "director": "Brad Bird",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Les Miller, une famille en herbe",
+    "year": 2013,
+    "director": "Rawson Marshall Thurber",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Les Mondes de Ralph",
+    "year": 2012,
+    "director": "Rich Moore",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Les Nouveaux Héros",
+    "year": 2014,
+    "director": "Chris Williams et Don Hall",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Les Oiseaux",
+    "year": 1963,
+    "director": "Alfred Hitchcock",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Les Rivières pourpres",
+    "year": 2000,
+    "director": "Mathieu Kassovitz",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Les Sous-doués",
+    "year": 1980,
+    "director": "Claude Zidi",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Les Évadés",
+    "year": 1994,
+    "director": "Frank Darabont",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Lilo & Stitch",
+    "year": 2002,
+    "director": "Chris Sanders et Dean Deblois",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Limitless",
+    "year": 2011,
+    "director": "Neil Burger",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Logan",
+    "year": 2017,
+    "director": "James Mangold",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Lucy",
+    "year": 2014,
+    "director": "Luc Besson",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Là-haut",
+    "year": 2009,
+    "director": "Pete Docter et Bob Peterson",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Léon",
+    "year": 1994,
+    "director": "Luc Besson",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Mad Max",
+    "year": 1979,
+    "director": "George Miller",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Madagascar",
+    "year": 2005,
+    "director": "Eric Darnell et Tom McGrath",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Madame Doubtfire",
+    "year": 1993,
+    "director": "Chris Columbus",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Maman, j'ai raté l'avion !",
+    "year": 1990,
+    "director": "Chris Columbus",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Mamma Mia ! - Le Film",
+    "year": 2008,
+    "director": "Phyllida Lloyd",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Man of Steel",
+    "year": 2013,
+    "director": "Zack Snyder",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Mars Attacks!",
+    "year": 1996,
+    "director": "Tim Burton",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Mary Poppins",
+    "year": 1964,
+    "director": "Robert Stevenson",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Matilda",
+    "year": 1996,
+    "director": "Danny DeVito",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Matrix",
+    "year": 1999,
+    "director": "Lilly Wachowski et Lana Wachowski",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Memento",
+    "year": 2000,
+    "director": "Christopher Nolan",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Men in Black",
+    "year": 1997,
+    "director": "Barry Sonnenfeld",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Men in Black II",
+    "year": 2002,
+    "director": "Barry Sonnenfeld",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Menteur, menteur",
+    "year": 1997,
+    "director": "Tom Shadyac",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Million Dollar Baby",
+    "year": 2004,
+    "director": "Clint Eastwood",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Minority Report",
+    "year": 2002,
+    "director": "Steven Spielberg",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Mission: Impossible",
+    "year": 1996,
+    "director": "Brian De Palma",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Mon voisin Totoro",
+    "year": 1988,
+    "director": "Hayao Miyazaki",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Monstres & Cie",
+    "year": 2001,
+    "director": "Pete Docter, David Silverman et Lee Unkrich",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Mr. & Mrs. Smith",
+    "year": 2005,
+    "director": "Doug Liman",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Mulan",
+    "year": 1998,
+    "director": "Barry Cook et Tony Bancroft",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Mulholland Drive",
+    "year": 2001,
+    "director": "David Lynch",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "N'oublie jamais",
+    "year": 2004,
+    "director": "Nick Cassavetes",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Nikita",
+    "year": 1990,
+    "director": "Luc Besson",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Ocean's Eleven",
+    "year": 2001,
+    "director": "Steven Soderbergh",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Old Boy",
+    "year": 2003,
+    "director": "Park Chan-Wook",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Orange mécanique",
+    "year": 1971,
+    "director": "Stanley Kubrick",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Orgueil & Préjugés",
+    "year": 2005,
+    "director": "Joe Wright",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "OSS 117 - Le Caire, nid d'espions",
+    "year": 2006,
+    "director": "Michel Hazanavicius",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Paranormal Activity",
+    "year": 2007,
+    "director": "Oren Peli",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Pearl Harbor",
+    "year": 2001,
+    "director": "Michael Bay",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Phone Game",
+    "year": 2003,
+    "director": "Joel Schumacher",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Pirates des Caraïbes - Jusqu'au bout du monde",
+    "year": 2007,
+    "director": "Gore Verbinski",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Pirates des Caraïbes - La Malédiction du Black Pearl",
+    "year": 2003,
+    "director": "Gore Verbinski",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Pirates des Caraïbes - Le Secret du coffre maudit",
+    "year": 2006,
+    "director": "Gore Verbinski",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Pirates des Caraïbes : La Fontaine de Jouvence",
+    "year": 2011,
+    "director": "Rob Marshall",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Piège de cristal",
+    "year": 1988,
+    "director": "John McTiernan",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Plus jamais",
+    "year": 2002,
+    "director": "Michael Apted",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Pocahontas - Une légende indienne",
+    "year": 1995,
+    "director": "Mike Gabriel et Eric Goldberg",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Pokémon : Détective Pikachu",
+    "year": 2019,
+    "director": "Rob Letterman",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Pokémon, le film",
+    "year": 1998,
+    "director": "Kunihiko Yuyama et Michael Haigney",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Polisse",
+    "year": 2011,
+    "director": "Maïwenn",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Ponyo sur la falaise",
+    "year": 2008,
+    "director": "Hayao Miyazaki",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Porco Rosso",
+    "year": 1992,
+    "director": "Hayao Miyazaki",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Predator",
+    "year": 1987,
+    "director": "John McTiernan",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Pretty Woman",
+    "year": 1990,
+    "director": "Garry Marshall",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Princesse Mononoké",
+    "year": 1997,
+    "director": "Hayao Miyazaki",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "director": "Quentin Tarantino",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Quand Harry rencontre Sally...",
+    "year": 1989,
+    "director": "Rob Reiner",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Qui veut la peau de Roger Rabbit",
+    "year": 1988,
+    "director": "Robert Zemeckis",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Rain Man",
+    "year": 1988,
+    "director": "Barry Levinson",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Raiponce",
+    "year": 2010,
+    "director": "Byron Howard et Nathan Greno",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Ralph 2.0",
+    "year": 2018,
+    "director": "Rich Moore et Phil Johnston",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Ratatouille",
+    "year": 2007,
+    "director": "Brad Bird et Jan Pinkava",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Ready Player One",
+    "year": 2018,
+    "director": "Steven Spielberg",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Real Steel",
+    "year": 2011,
+    "director": "Shawn Levy",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Rebelle",
+    "year": 2012,
+    "director": "Mark Andrews, Brenda Chapman et Steve Purcell",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Rencontres du troisième type",
+    "year": 1977,
+    "director": "Steven Spielberg",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Requiem for a Dream",
+    "year": 2000,
+    "director": "Darren Aronofsky",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Reservoir Dogs",
+    "year": 1992,
+    "director": "Quentin Tarantino",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Retour vers le futur",
+    "year": 1985,
+    "director": "Robert Zemeckis",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Retour vers le futur 2",
+    "year": 1989,
+    "director": "Robert Zemeckis",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Retour vers le futur 3",
+    "year": 1990,
+    "director": "Robert Zemeckis",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Robin des Bois",
+    "year": 1973,
+    "director": "Wolfgang Reitherman",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "RoboCop",
+    "year": 1987,
+    "director": "Paul Verhoeven",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Rocky",
+    "year": 1976,
+    "director": "John G. Avildsen",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "RRRrrrr !!!",
+    "year": 2004,
+    "director": "Alain Chabat",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Rush Hour",
+    "year": 1998,
+    "director": "Brett Ratner",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "S.O.S. Fantômes",
+    "year": 1984,
+    "director": "Ivan Reitman",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "S.O.S. Fantômes II",
+    "year": 1989,
+    "director": "Ivan Reitman",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Sacré Robin des bois",
+    "year": 1993,
+    "director": "Mel Brooks",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Saw",
+    "year": 2004,
+    "director": "James Wan",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Scarface",
+    "year": 1983,
+    "director": "Brian De Palma",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Scary Movie",
+    "year": 2000,
+    "director": "Keenen Ivory Wayans",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Scott Pilgrim",
+    "year": 2010,
+    "director": "Edgar Wright",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Scream",
+    "year": 1996,
+    "director": "Wes Craven",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Seul au monde",
+    "year": 2000,
+    "director": "Robert Zemeckis",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Seul sur Mars",
+    "year": 2015,
+    "director": "Ridley Scott",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Seven",
+    "year": 1995,
+    "director": "David Fincher",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Sexe entre amis",
+    "year": 2011,
+    "director": "Will Gluck",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Shall We Dance ? (La Nouvelle vie de monsieur Clark)",
+    "year": 2004,
+    "director": "Peter Chelsom",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Shaolin Soccer",
+    "year": 2001,
+    "director": "Stephen Chow et Lee Lik-Chi",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Shaun of the Dead",
+    "year": 2004,
+    "director": "Edgar Wright",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Shazam!",
+    "year": 2019,
+    "director": "David F. Sandberg",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Shining",
+    "year": 1980,
+    "director": "Stanley Kubrick",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Shrek",
+    "year": 2001,
+    "director": "Andrew Adamson et Vicky Jenson",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Shrek 2",
+    "year": 2004,
+    "director": "Andrew Adamson, Kelly Asbury et Conrad Vernon",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Shrek le Troisième",
+    "year": 2007,
+    "director": "Chris Miller et Raman Hui",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Shutter Island",
+    "year": 2010,
+    "director": "Martin Scorsese",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Sister Act",
+    "year": 1992,
+    "director": "Emile Ardolino",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Sixième Sens",
+    "year": 1999,
+    "director": "M. Night Shyamalan",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Slumdog Millionaire",
+    "year": 2008,
+    "director": "Danny Boyle et Loveleen Tandan",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Snatch - Tu braques ou tu raques",
+    "year": 2000,
+    "director": "Guy Ritchie",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "South Park, le film",
+    "year": 1999,
+    "director": "Trey Parker",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Speed",
+    "year": 1994,
+    "director": "Jan de Bont",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Spider-Man",
+    "year": 2002,
+    "director": "Sam Raimi",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Spider-Man 2",
+    "year": 2004,
+    "director": "Sam Raimi",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Spider-Man 3",
+    "year": 2007,
+    "director": "Sam Raimi",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Spider-Man : New Generation",
+    "year": 2018,
+    "director": "Bob Persichetti, Peter Ramsey et Rodney Rothman",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Spider-Man: Across the Spider-Verse",
+    "year": 2023,
+    "director": "Joaquim Dos Santos, Kemp Powers et Justin K. Thompson",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Spider-Man: Far From Home",
+    "year": 2019,
+    "director": "Jon Watts",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Spider-Man: Homecoming",
+    "year": 2017,
+    "director": "Jon Watts",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Spider-Man: No Way Home",
+    "year": 2021,
+    "director": "Jon Watts",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Star Wars - Épisode I : La Menace fantôme",
+    "year": 1999,
+    "director": "George Lucas",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Star Wars - Épisode II : L'Attaque des clones",
+    "year": 2002,
+    "director": "George Lucas",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Star Wars - Épisode III : La Revanche des Sith",
+    "year": 2005,
+    "director": "George Lucas",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Steppin'",
+    "year": 2007,
+    "director": "Sylvain White",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Suicide Squad",
+    "year": 2016,
+    "director": "David Ayer",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Super Mario Bros, le film",
+    "year": 2023,
+    "director": "Aaron Horvath et Michael Jelenic",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Taken",
+    "year": 2008,
+    "director": "Pierre Morel",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Taxi",
+    "year": 1998,
+    "director": "Gérard Pirès",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Ted",
+    "year": 2012,
+    "director": "Seth MacFarlane",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Tenacious D in The Pick of Destiny",
+    "year": 2006,
+    "director": "Liam Lynch",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Tenet",
+    "year": 2020,
+    "director": "Christopher Nolan",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Terminator",
+    "year": 1984,
+    "director": "James Cameron",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Terminator 2 - Le Jugement dernier",
+    "year": 1991,
+    "director": "James Cameron",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "The Amazing Spider-Man",
+    "year": 2012,
+    "director": "Marc Webb",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "The Amazing Spider-Man - Le Destin d'un héros",
+    "year": 2014,
+    "director": "Marc Webb",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "The Artist",
+    "year": 2011,
+    "director": "Michel Hazanavicius",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "The Dark Knight - Le Chevalier noir",
+    "year": 2008,
+    "director": "Christopher Nolan",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "The Dark Knight Rises",
+    "year": 2012,
+    "director": "Christopher Nolan",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "The Game",
+    "year": 1997,
+    "director": "David Fincher",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "The Giver - Le Passeur",
+    "year": 2014,
+    "director": "Phillip Noyce",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "director": "Wes Anderson",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "The Greatest Showman",
+    "year": 2017,
+    "director": "Michael Gracey",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "The Grudge",
+    "year": 2004,
+    "director": "Takashi Shimizu",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "The Hit Girls (Pitch Perfect)",
+    "year": 2012,
+    "director": "Jason Moore",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "The Karate Kid",
+    "year": 2010,
+    "director": "Harald Zwart",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "The Mask",
+    "year": 1994,
+    "director": "Chuck Russell",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "The Social Network",
+    "year": 2010,
+    "director": "David Fincher",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "The Truman Show",
+    "year": 1998,
+    "director": "Peter Weir",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "The Whale",
+    "year": 2022,
+    "director": "Darren Aronofsky",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Thor",
+    "year": 2011,
+    "director": "Kenneth Branagh",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Thor - Le monde des ténèbres",
+    "year": 2013,
+    "director": "Alan Taylor",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Thor: Love and Thunder",
+    "year": 2022,
+    "director": "Taika Waititi",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Thor: Ragnarok",
+    "year": 2017,
+    "director": "Taika Waititi",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Titanic",
+    "year": 1997,
+    "director": "James Cameron",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Top Gun",
+    "year": 1986,
+    "director": "Tony Scott",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Total Recall",
+    "year": 1990,
+    "director": "Paul Verhoeven",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Toy Story",
+    "year": 1995,
+    "director": "John Lasseter",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Toy Story 2",
+    "year": 1999,
+    "director": "John Lasseter, Ash Brannon et Lee Unkrich",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Toy Story 3",
+    "year": 2010,
+    "director": "Lee Unkrich",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Trainspotting",
+    "year": 1996,
+    "director": "Danny Boyle",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Transformers",
+    "year": 2007,
+    "director": "Michael Bay",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Tron",
+    "year": 1982,
+    "director": "Steven Lisberger",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Tron - L'Héritage",
+    "year": 2010,
+    "director": "Joseph Kosinski",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Un Indien dans la ville",
+    "year": 1994,
+    "director": "Hervé Palud",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Une journée en enfer",
+    "year": 1995,
+    "director": "John McTiernan",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Usual Suspects",
+    "year": 1995,
+    "director": "Bryan Singer",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "V pour Vendetta",
+    "year": 2006,
+    "director": "James McTeigue",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Vaiana - La légende du bout du monde",
+    "year": 2016,
+    "director": "John Musker, Ron Clements, Don Hall et Chris Williams",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Vaiana 2",
+    "year": 2024,
+    "director": "Dave Derrick Jr., Jason Hand et Dana Ledoux Miller",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Vendredi 13",
+    "year": 2009,
+    "director": "Marcus Nispel",
+    "ageBracket": "18+"
+  },
+  {
+    "title": "Very Bad Trip",
+    "year": 2009,
+    "director": "Todd Phillips",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Very Bad Trip 2",
+    "year": 2011,
+    "director": "Todd Phillips",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Vice-versa",
+    "year": 2015,
+    "director": "Pete Docter et Ronnie del Carmen",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Vice-versa 2",
+    "year": 2024,
+    "director": "Kelsey Mann",
+    "ageBracket": "6-8"
+  },
+  {
+    "title": "Vidocq",
+    "year": 2001,
+    "director": "Pitof",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Wall-E",
+    "year": 2008,
+    "director": "Andrew Stanton",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Wanted : Choisis ton destin",
+    "year": 2008,
+    "director": "Timur Bekmambetov",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Warcraft : Le Commencement",
+    "year": 2016,
+    "director": "Duncan Jones",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Waterworld",
+    "year": 1995,
+    "director": "Kevin Reynolds",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "West Side Story",
+    "year": 1961,
+    "director": "Robert Wise et Jerome Robbins",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Whiplash",
+    "year": 2014,
+    "director": "Damien Chazelle",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Wild Wild West",
+    "year": 1999,
+    "director": "Barry Sonnenfeld",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Willow",
+    "year": 1988,
+    "director": "Ron Howard",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Wolverine - Le combat de l'immortel",
+    "year": 2013,
+    "director": "James Mangold",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Wonder Woman",
+    "year": 2017,
+    "director": "Patty Jenkins",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "X-Men",
+    "year": 2000,
+    "director": "Bryan Singer",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "X-Men - Dark Phoenix",
+    "year": 2019,
+    "director": "Simon Kinberg",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "X-Men - L'affrontement final",
+    "year": 2006,
+    "director": "Brett Ratner",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "X-Men - Le Commencement",
+    "year": 2011,
+    "director": "Matthew Vaughn",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "X-Men 2",
+    "year": 2003,
+    "director": "Bryan Singer",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "X-Men Origins - Wolverine",
+    "year": 2009,
+    "director": "Gavin Hood",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "X-Men: Apocalypse",
+    "year": 2016,
+    "director": "Bryan Singer",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "X-Men: Days of Future Past",
+    "year": 2014,
+    "director": "Bryan Singer",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Y a-t-il enfin un pilote dans l'avion ?",
+    "year": 1982,
+    "director": "Ken Finkleman",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Y a-t-il un flic pour sauver Hollywood ?",
+    "year": 1994,
+    "director": "Peter Segal",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Y a-t-il un flic pour sauver l'humanité ?",
+    "year": 2000,
+    "director": "Allan A. Goldstein",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Y a-t-il un flic pour sauver la reine ?",
+    "year": 1988,
+    "director": "David Zucker",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Y a-t-il un flic pour sauver le président ?",
+    "year": 1991,
+    "director": "David Zucker",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Y a-t-il un pilote dans l'avion ?",
+    "year": 1980,
+    "director": "Jim Abrahams, David Zucker et Jerry Zucker",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Yamakasi - Les Samouraïs des temps modernes",
+    "year": 2001,
+    "director": "Ariel Zeitoun et Julien Seri",
+    "ageBracket": "9-12"
+  },
+  {
+    "title": "Yes Man",
+    "year": 2008,
+    "director": "Peyton Reed",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Your Name.",
+    "year": 2016,
+    "director": "Makoto Shinkai",
+    "ageBracket": "13-15"
+  },
+  {
+    "title": "Zodiac",
+    "year": 2007,
+    "director": "David Fincher",
+    "ageBracket": "16-17"
+  },
+  {
+    "title": "Zootopie",
+    "year": 2016,
+    "director": "Byron Howard, Rich Moore et Jared Bush",
+    "ageBracket": "3-5"
+  },
+  {
+    "title": "Ça",
+    "year": 2017,
+    "director": "Andy Muschietti",
+    "ageBracket": "18+"
+  }
+]

@@ -1,0 +1,13 @@
+# docker-compose.override.yml - configuration spécifique au déploiement.
+# Copie ce fichier en docker-compose.override.yml (gitignore) sur ton serveur.
+# Docker Compose merge automatiquement ce fichier avec docker-compose.yml.
+#
+# Usage typique : exposer Cinepass uniquement sur la loopback (127.0.0.1)
+# pour qu'un reverse proxy externe (Caddy, nginx, traefik) le proxie en HTTPS.
+
+services:
+  web:
+    ports:
+      # Bind loopback only : le port 3081 (ou ce que tu mets dans .env)
+      # n'est PAS exposé sur internet. UFW + bind sur 127.0.0.1 = double rempart.
+      - "127.0.0.1:${CINEPASS_PORT:-3081}:80"

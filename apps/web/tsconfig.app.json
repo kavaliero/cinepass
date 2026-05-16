@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "target": "ES2022",
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "composite": true,
+    "noEmit": true,
+    "useDefineForClassFields": true,
+    "types": ["vite/client"]
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "references": [{ "path": "../../packages/shared" }]
+}

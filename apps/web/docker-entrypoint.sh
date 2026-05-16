@@ -16,9 +16,11 @@ fi
 # -b : password en argument (batch mode)
 # -n : print to stdout au lieu de modifier un fichier
 htpasswd -Bbn "$CINEPASS_USER" "$CINEPASS_PASS" > /etc/nginx/.htpasswd
-chmod 640 /etc/nginx/.htpasswd
+# 644 : nginx workers (group nginx) doivent pouvoir le lire.
+# Le bcrypt protege le password, le fichier peut etre world-readable.
+chmod 644 /etc/nginx/.htpasswd
 
-echo "[entrypoint] htpasswd genere pour user '$CINEPASS_USER'"
+echo "[entrypoint] htpasswd genere pour user '$CINEPASS_USER' ($(wc -c < /etc/nginx/.htpasswd) bytes)"
 
 # Test la config nginx avant de lancer
 nginx -t

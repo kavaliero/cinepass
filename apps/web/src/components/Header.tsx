@@ -7,9 +7,7 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <div>
           <h1 className="text-2xl font-bold tracking-tight">🎬 Cinépass</h1>
-          <p className="text-sm text-zinc-600">
-            Watchlist familiale, triée par tranche d&apos;âge
-          </p>
+          <p className="text-sm text-zinc-600">Watchlist familiale, triée par tranche d&apos;âge</p>
         </div>
         {data && (
           <div className="flex gap-4 text-sm">

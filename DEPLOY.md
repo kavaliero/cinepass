@@ -33,6 +33,7 @@ Le port `3081` suit la convention de tes apps existantes (`3080` lexkit, `3090` 
 4. Update → ça se propage en quelques secondes
 
 Vérifie depuis Fortress :
+
 ```bash
 dig +short cinepass.duckdns.org
 # doit retourner 62.210.131.191
@@ -56,6 +57,7 @@ nano .env
 ```
 
 Contenu `.env` :
+
 ```
 CINEPASS_USER=kavaliero
 CINEPASS_PASS=<openssl rand -base64 18>   # gen un vrai password long
@@ -64,11 +66,13 @@ CINEPASS_BIND_ADDR=127.0.0.1              # IMPORTANT : loopback only, Caddy pro
 ```
 
 Tu n'as **plus besoin** du `docker-compose.override.yml` : tout est piloté par `.env`. Si tu en as deja un d'un essai precedent, supprime-le :
+
 ```bash
 rm -f docker-compose.override.yml
 ```
 
 Astuce pour générer un password sympa :
+
 ```bash
 openssl rand -base64 18
 # colle le résultat dans CINEPASS_PASS
@@ -107,6 +111,7 @@ nano /home/kavaliero/lexkit/Caddyfile
 ```
 
 Ajoute en bas :
+
 ```
 cinepass.duckdns.org {
     reverse_proxy 127.0.0.1:3081
@@ -114,6 +119,7 @@ cinepass.duckdns.org {
 ```
 
 Le Caddyfile complet ressemblera à :
+
 ```
 lexkit.duckdns.org {
     reverse_proxy 127.0.0.1:3080
@@ -129,6 +135,7 @@ cinepass.duckdns.org {
 ```
 
 Reload Caddy (sans redémarrer le container) :
+
 ```bash
 sudo docker exec caddy-lexkit caddy reload --config /etc/caddy/Caddyfile
 ```
@@ -138,6 +145,7 @@ Tu devrais voir un log type `successfully started server`. Caddy va négocier le
 ## Étape 5 : Vérifier en HTTPS
 
 Depuis ton PC perso :
+
 ```powershell
 # Sans credentials -> 401 attendu
 curl.exe -I https://cinepass.duckdns.org/
@@ -153,12 +161,14 @@ Puis browser : https://cinepass.duckdns.org → popup login → tu rentres user/
 ## Étape 6 : Smoke tests à distance
 
 Dans le repo local sur ton PC, édite `.env` (à la racine) avec les credentials :
+
 ```
 CINEPASS_USER=kavaliero
 CINEPASS_PASS=<le_meme_password>
 ```
 
 Puis :
+
 ```powershell
 SMOKE_URL=https://cinepass.duckdns.org make smoke
 # 5 checks doivent passer
@@ -167,6 +177,7 @@ SMOKE_URL=https://cinepass.duckdns.org make smoke
 ## CI/CD : auto-deploy sur push main
 
 Une fois la mise en prod manuelle réussie (étapes 1-5 ci-dessus), tu peux activer le déploiement automatique. À chaque `git push origin main` qui passe la CI :
+
 1. GitHub Actions SSH dans Fortress
 2. `git pull && docker-compose up -d --build`
 3. Attend que `/api/health` réponde
@@ -184,17 +195,20 @@ ssh-keygen -t ed25519 -f "$HOME\.ssh\cinepass_deploy" -C "github-actions-deploy"
 ```
 
 Crée :
+
 - `cinepass_deploy` (clé privée → ira dans GH Secrets)
 - `cinepass_deploy.pub` (clé publique → ira sur Fortress)
 
 #### 2. Ajoute la clé publique sur Fortress
 
 Copie le contenu de la clé publique :
+
 ```powershell
 Get-Content "$HOME\.ssh\cinepass_deploy.pub" | Set-Clipboard
 ```
 
 Puis sur Fortress :
+
 ```bash
 nano ~/.ssh/authorized_keys
 ```
@@ -208,6 +222,7 @@ command="cd /home/kavaliero/cinepass && git pull --ff-only && /usr/local/bin/doc
 > Note : si t'as la flemme de la restriction `command="..."`, tu peux coller juste la ligne `ssh-ed25519 AAAA...` sans le prefix. Moins safe (la key permet tout) mais plus simple. Tu peux mettre la restriction plus tard.
 
 Teste depuis ton PC :
+
 ```powershell
 ssh -i "$HOME\.ssh\cinepass_deploy" kavaliero@<IP_FORTRESS> "echo OK"
 # Doit afficher OK (ou faire le deploy si t'as la restriction command=)
@@ -219,23 +234,25 @@ Va sur https://github.com/kavaliero/cinepass/settings/secrets/actions → **New 
 
 Crée ces secrets :
 
-| Nom | Valeur |
-|-----|--------|
-| `VPS_HOST` | IP ou hostname de Fortress (ex: `62.210.131.191`) |
-| `VPS_USER` | `kavaliero` |
+| Nom           | Valeur                                                                                                                                           |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `VPS_HOST`    | IP ou hostname de Fortress (ex: `62.210.131.191`)                                                                                                |
+| `VPS_USER`    | `kavaliero`                                                                                                                                      |
 | `VPS_SSH_KEY` | Contenu complet de `cinepass_deploy` (avec les `-----BEGIN` et `-----END`) - copie via `Get-Content $HOME\.ssh\cinepass_deploy \| Set-Clipboard` |
-| `SMOKE_URL` | `https://cinepass.duckdns.org` |
-| `SMOKE_USER` | `kavaliero` |
-| `SMOKE_PASS` | Le même password que dans ton `.env` sur Fortress |
+| `SMOKE_URL`   | `https://cinepass.duckdns.org`                                                                                                                   |
+| `SMOKE_USER`  | `kavaliero`                                                                                                                                      |
+| `SMOKE_PASS`  | Le même password que dans ton `.env` sur Fortress                                                                                                |
 
 #### 4. Trigger un premier deploy
 
 Pour tester sans changement de code :
+
 - Va sur https://github.com/kavaliero/cinepass/actions/workflows/deploy.yml
 - Clique sur **Run workflow** (workflow_dispatch)
 - Sélectionne la branche `main` + clique le bouton
 
 Ou pousse un commit :
+
 ```powershell
 git commit --allow-empty -m "ci: trigger deploy test"
 git push
@@ -266,6 +283,7 @@ git push                 # re-trigger le pipeline -> redeploy le code precedent
 ```
 
 Ou en urgence directement sur Fortress :
+
 ```bash
 ssh kavaliero@fortress
 cd ~/cinepass
@@ -308,6 +326,7 @@ crontab -e
 ```
 
 Ajoute :
+
 ```cron
 # Backup Cinepass tous les jours à 3h, garde 30 jours
 0 3 * * * cd /home/kavaliero/cinepass && /usr/bin/docker compose cp api:/app/apps/api/prisma/cinepass.db /home/kavaliero/backups/cinepass-$(date +\%Y\%m\%d).db && find /home/kavaliero/backups -name "cinepass-*.db" -mtime +30 -delete
@@ -339,14 +358,14 @@ docker compose exec api node scripts/fetch-posters.mjs
 
 ## Si ça plante
 
-| Symptôme | Diagnostic | Fix |
-|----------|-----------|-----|
-| `dig +short cinepass.duckdns.org` vide | DNS pas créé/propagé | Re-vérifie sur duckdns.org |
-| `curl https://cinepass.duckdns.org` -> certificat invalide | Caddy n'a pas réussi à obtenir le cert | `sudo docker logs caddy-lexkit | tail -50` (rate limit Let's Encrypt ? bloquage port 80 ?) |
-| 502 Bad Gateway de Caddy | cinepass-web pas joignable | `docker compose ps` dans `~/cinepass/` - web doit être healthy |
-| 401 partout, pas de popup | nginx .htpasswd cassé | `docker compose exec web cat /etc/nginx/.htpasswd` doit montrer une ligne |
-| Statuts perdus après reboot | Volume mal monté | `docker volume inspect cinepass_api-data` doit avoir un mountpoint |
-| Posters cassés (404) | TMDB temporairement down ou film sans match | `make fetch-posters-retry` |
+| Symptôme                                                   | Diagnostic                                  | Fix                                                                       |
+| ---------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------- |
+| `dig +short cinepass.duckdns.org` vide                     | DNS pas créé/propagé                        | Re-vérifie sur duckdns.org                                                |
+| `curl https://cinepass.duckdns.org` -> certificat invalide | Caddy n'a pas réussi à obtenir le cert      | `sudo docker logs caddy-lexkit                                            | tail -50` (rate limit Let's Encrypt ? bloquage port 80 ?) |
+| 502 Bad Gateway de Caddy                                   | cinepass-web pas joignable                  | `docker compose ps` dans `~/cinepass/` - web doit être healthy            |
+| 401 partout, pas de popup                                  | nginx .htpasswd cassé                       | `docker compose exec web cat /etc/nginx/.htpasswd` doit montrer une ligne |
+| Statuts perdus après reboot                                | Volume mal monté                            | `docker volume inspect cinepass_api-data` doit avoir un mountpoint        |
+| Posters cassés (404)                                       | TMDB temporairement down ou film sans match | `make fetch-posters-retry`                                                |
 
 ## Sécurité
 

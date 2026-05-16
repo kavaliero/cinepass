@@ -25,7 +25,8 @@ export function useStats() {
 export function useUpdateFilm() {
   const qc = useQueryClient();
   return useMutation({
-    mutationFn: ({ id, patch }: { id: number; patch: UpdateFilmInput }) => api.updateFilm(id, patch),
+    mutationFn: ({ id, patch }: { id: number; patch: UpdateFilmInput }) =>
+      api.updateFilm(id, patch),
     onSuccess: (updated: Film) => {
       // Invalide tous les caches qui contiennent des films
       void qc.invalidateQueries({ queryKey: ['films'] });

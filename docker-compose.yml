@@ -15,21 +15,21 @@ services:
     container_name: cinepass-api
     restart: unless-stopped
     expose:
-      - "3001"
+      - '3001'
     environment:
       NODE_ENV: production
-      PORT: "3001"
-      DATABASE_URL: "file:/app/apps/api/prisma/cinepass.db"
+      PORT: '3001'
+      DATABASE_URL: 'file:/app/apps/api/prisma/cinepass.db'
       # CORS_ORIGIN n'est pas critique car nginx proxie /api -> meme origine.
       # On le laisse permissif pour les acces directs eventuels.
-      CORS_ORIGIN: "*"
+      CORS_ORIGIN: '*'
       # Optionnel : pour faire tourner `docker-compose exec api node scripts/fetch-posters.mjs`
       # Inscription gratuite : https://www.themoviedb.org/signup
       TMDB_API_KEY: ${TMDB_API_KEY:-}
     volumes:
       - api-data:/app/apps/api/prisma
     healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://localhost:3001/api/health"]
+      test: ['CMD', 'wget', '-qO-', 'http://localhost:3001/api/health']
       interval: 15s
       timeout: 3s
       start_period: 20s
@@ -45,7 +45,7 @@ services:
       # Format : [HOST_IP:]HOST_PORT:CONTAINER_PORT
       # Dev : 0.0.0.0:8080 (accessible sur le LAN)
       # Prod derriere reverse proxy : 127.0.0.1:3081 (loopback only)
-      - "${CINEPASS_BIND_ADDR:-0.0.0.0}:${CINEPASS_PORT:-8080}:80"
+      - '${CINEPASS_BIND_ADDR:-0.0.0.0}:${CINEPASS_PORT:-8080}:80'
     environment:
       # HTTP Basic Auth (genere /etc/nginx/.htpasswd au boot).
       # Le `:?` fait fail compose si la var n'est pas definie (securite).
@@ -55,7 +55,7 @@ services:
       api:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://localhost/healthz"]
+      test: ['CMD', 'wget', '-qO-', 'http://localhost/healthz']
       interval: 15s
       timeout: 3s
       retries: 3

@@ -83,6 +83,7 @@ make docker-logs  # tail logs api + web
 ```
 
 Variables utilisables :
+
 - `SMOKE_URL=https://cinepass.example.com make smoke` cible une instance distante
 - `CINEPASS_PORT=9000 make docker-up` change le port Docker exposé
 - `NO_COLOR=1 make help` désactive les couleurs (CI / logs)
@@ -127,6 +128,7 @@ Les 471 films viennent d'une [liste SensCritique "films cultes à voir"](https:/
 ## Déploiement
 
 Pour mettre en ligne sur un VPS avec HTTPS automatique + HTTP Basic Auth, suis [DEPLOY.md](DEPLOY.md). En résumé :
+
 1. `cp .env.example .env` + édite les credentials
 2. `docker compose up -d --build` sur le VPS
 3. Caddy en front pour Let's Encrypt + reverse proxy

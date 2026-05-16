@@ -34,7 +34,9 @@ function renderWithQuery(ui: React.ReactElement) {
 describe('FilmCard', () => {
   it('affiche le titre, l’année et le réalisateur', () => {
     renderWithQuery(<FilmCard film={film} />);
-    expect(screen.getByText('Toy Story')).toBeInTheDocument();
+    // Le titre est dans un h3 (semantic). On le cible specifiquement car
+    // sans posterUrl, le fallback affiche aussi le titre en surimpression.
+    expect(screen.getByRole('heading', { name: 'Toy Story' })).toBeInTheDocument();
     expect(screen.getByText(/1995.*John Lasseter/)).toBeInTheDocument();
   });
 });

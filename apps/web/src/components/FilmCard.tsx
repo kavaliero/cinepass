@@ -1,5 +1,6 @@
 import { type Film, FILM_STATUS_META, nextStatus } from '@cinepass/shared';
 import { useUpdateFilm } from '../hooks/useFilms.js';
+import { useAuth } from '../hooks/useAuth.js';
 
 interface Props {
   film: Film;
@@ -13,22 +14,29 @@ const STATUS_OVERLAY: Record<Film['status'], string> = {
 
 export function FilmCard({ film }: Props) {
   const update = useUpdateFilm();
+  const { data: auth } = useAuth();
+  const isAuth = auth?.authenticated ?? false;
   const meta = FILM_STATUS_META[film.status];
 
   const onClick = () => {
+    if (!isAuth) return;
     update.mutate({
       id: film.id,
       patch: { status: nextStatus(film.status) },
     });
   };
 
+  const title = isAuth
+    ? `Cliquer pour passer a : ${FILM_STATUS_META[nextStatus(film.status)].label}`
+    : 'Mode lecture seule - connecte-toi pour modifier';
+
   return (
     <button
       type="button"
       onClick={onClick}
-      disabled={update.isPending}
-      className={`group relative flex w-full flex-col gap-1.5 text-left transition ${STATUS_OVERLAY[film.status]}`}
-      title={`Cliquer pour passer a : ${FILM_STATUS_META[nextStatus(film.status)].label}`}
+      disabled={!isAuth || update.isPending}
+      className={`group relative flex w-full flex-col gap-1.5 text-left transition ${STATUS_OVERLAY[film.status]} ${!isAuth ? 'cursor-default' : 'cursor-pointer'}`}
+      title={title}
     >
       <div className="relative aspect-[2/3] w-full overflow-hidden rounded-md bg-zinc-200">
         {film.posterUrl ? (
@@ -36,7 +44,7 @@ export function FilmCard({ film }: Props) {
             src={film.posterUrl}
             alt={`Affiche ${film.title}`}
             loading="lazy"
-            className="h-full w-full object-cover transition group-hover:scale-105"
+            className={`h-full w-full object-cover transition ${isAuth ? 'group-hover:scale-105' : ''}`}
           />
         ) : (
           <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-zinc-200 to-zinc-300 p-3 text-center">

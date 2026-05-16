@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Header } from './components/Header.js';
+import { AuthBanner } from './components/AuthBanner.js';
 import { Filters } from './components/Filters.js';
 import { FilmList } from './components/FilmList.js';
 import { useFilms, type FilmFilters } from './hooks/useFilms.js';
@@ -11,6 +12,7 @@ export function App() {
   return (
     <div className="min-h-dvh">
       <Header />
+      <AuthBanner />
       <Filters filters={filters} onChange={setFilters} />
       <main className="mx-auto max-w-6xl px-4 py-6">
         {isLoading && <p className="text-sm text-zinc-500">Chargement...</p>}

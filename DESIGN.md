@@ -24,6 +24,7 @@ Alternative considérée : Turborepo. Rejeté pour ne pas ajouter de complexité
 - Express 5 (vs 4) pour le support async/await natif des handlers.
 
 Alternatives considérées :
+
 - **Hono** : plus rapide et moderne, mais Nicolas connaît mieux Express. À reconsidérer si on déploie sur edge (Cloudflare Workers).
 - **Next.js API routes** : aurait fusionné backend et frontend, mais on perd la séparation propre + SSR pas utile ici.
 
@@ -74,14 +75,15 @@ On démarre **mono-utilisateur**. Le statut vit avec le film. Si on passe multi-
 
 REST minimaliste, pas de GraphQL :
 
-| Méthode | Endpoint | Utilité |
-|---------|----------|---------|
-| GET | `/api/health` | Healthcheck (utilisé en CI/CD et monitoring) |
-| GET | `/api/films` | Liste filtrable (`?ageBracket=6-8&status=TO_WATCH&search=harry`) |
-| GET | `/api/films/stats` | Compte par tranche et par statut (pour le header) |
-| PATCH | `/api/films/:id` | Update status et/ou notes |
+| Méthode | Endpoint           | Utilité                                                          |
+| ------- | ------------------ | ---------------------------------------------------------------- |
+| GET     | `/api/health`      | Healthcheck (utilisé en CI/CD et monitoring)                     |
+| GET     | `/api/films`       | Liste filtrable (`?ageBracket=6-8&status=TO_WATCH&search=harry`) |
+| GET     | `/api/films/stats` | Compte par tranche et par statut (pour le header)                |
+| PATCH   | `/api/films/:id`   | Update status et/ou notes                                        |
 
 Pas encore implémenté (V2) :
+
 - `POST /api/films` : ajouter un film à la main.
 - `DELETE /api/films/:id` : retirer un film.
 - `POST /api/import` : importer une liste SensCritique externe.
@@ -106,12 +108,14 @@ Pas de routing pour l'instant (single page). Si on ajoute une page "Stats" ou "H
 ### CI (implémentée)
 
 GitHub Actions, déclenchée sur PR + push main :
+
 1. Job `quality` : install → prisma generate → typecheck → lint → format check → tests unit → build.
 2. Job `e2e` : dépend de `quality`. Build, démarre api + web en background, lance Playwright.
 
 ### CD (partiel)
 
 **Stack Docker** prête à déployer (`docker compose up -d --build`) :
+
 - Image API multi-stage : Node 20 alpine, prod deps uniquement, entrypoint qui sync le schema (`prisma migrate deploy` si migrations, sinon `prisma db push`) puis seed (idempotent).
 - Image web multi-stage : build Vite, runtime nginx alpine qui sert les statics et proxie `/api` vers le service api.
 - Volume Docker `api-data` pour persister le SQLite. Backup = `docker compose cp api:/app/apps/api/prisma/cinepass.db ./`.
@@ -119,6 +123,7 @@ GitHub Actions, déclenchée sur PR + push main :
 - Port exposé : `${CINEPASS_PORT:-8080}` (web uniquement, l'API est en réseau interne).
 
 **Hébergement cible** (à choisir au moment du déploiement) :
+
 - **Auto-hébergé sur VPS OVH** (Nicolas en a un) : `docker compose up -d` et reverse proxy Caddy/Traefik devant pour HTTPS. Cohérent avec son infra existante.
 - **Fly.io** : un app par service ou les deux dans une seule machine, volume persistant Fly. Bon trade-off coût/simplicité.
 - **Vercel + Railway** : web sur Vercel (gratuit), api + SQLite sur Railway. Migration vers Postgres recommandée pour Railway.
@@ -129,9 +134,28 @@ GitHub Actions, déclenchée sur PR + push main :
 
 ## Auth
 
-**Choix V1 : HTTP Basic Auth via nginx** (cf [DEPLOY.md](DEPLOY.md)).
+**Choix V1 : Lecture publique, écriture protégée par HTTP Basic Auth** (cf [DEPLOY.md](DEPLOY.md)).
+
+Architecture :
+
+- `GET /api/*` : public (n'importe qui peut lire la liste, les stats, etc.)
+- `PATCH/POST/PUT/DELETE /api/*` : Basic Auth via nginx `limit_except GET`
+- `GET /api/auth/me` : protégé, sert au frontend à savoir s'il est authentifié
+- Le frontend HTML/JS/CSS : public
+
+Côté UX :
+
+- Visiteur non-auth : voit un bandeau "🔒 Mode lecture seule" + bouton "Se connecter"
+- Click sur "Se connecter" → `/api/auth/me` → browser affiche popup Basic Auth → user entre credentials → F5 → mode WRITE
+- En mode read-only, les `FilmCard` sont disabled (pas de hover scale, cursor default, tooltip "connecte-toi pour modifier")
+
+Cas d'usage :
+
+- Nicolas : Basic Auth, peut tout modifier
+- Famille/amis avec le lien : voient la liste, peuvent commenter "ah tiens vous avez pas encore vu X"
 
 Rationnel :
+
 - L'app est mono-utilisateur ("la famille"). Pas besoin de comptes individuels, juste de protéger contre les scans/bots aléatoires.
 - Basic Auth est implémenté en ~10 lignes de config nginx, géré à l'infrastructure (pas de code app à maintenir).
 - bcrypt côté serveur (`htpasswd -B`), credentials passés en env vars (`CINEPASS_USER`/`CINEPASS_PASS`), jamais en dur.
@@ -139,18 +163,21 @@ Rationnel :
 - `/healthz` reste public (sinon les healthchecks Docker tombent).
 
 Alternatives considérées :
+
 - **App-level PIN + cookie** : plus joli UX mais 100+ lignes de code à maintenir, vulnérable à plus de bugs.
 - **OAuth (Google)** : overkill pour 2-3 utilisateurs familiaux.
 - **Tailscale / VPN only** : oblige tout le monde à installer Tailscale, trop friction.
 - **Read-only public + write protégé** : envisageable V2 si on veut partager la liste avec des amis.
 
 Migration future :
+
 - Multi-utilisateur (V2) : ajouter une table `User`, JWT cookies, voir DESIGN.md roadmap.
 - Le jour où on migre : retirer `auth_basic` de nginx, faire la migration app-side.
 
 ## Licence
 
 **AGPL v3** - choisie pour les raisons suivantes :
+
 - Open source mais protège contre le clonage commercial pur (clause SaaS qui force la publication des modifs).
 - Compatible avec une éventuelle version commerciale hébergée par Nicolas (lui-même est libre de monétiser sa version puisqu'il en est l'auteur).
 - En accord avec l'écosystème de tools qu'on admire : Mastodon, Cal.com, Plausible, Bitwarden, Nextcloud.
@@ -160,16 +187,19 @@ Le jour où une intégration commerciale serait demandée, on pourra envisager u
 ## Roadmap (post-MVP)
 
 V1.1 :
+
 - Random picker ("qu'est-ce qu'on regarde ce soir ?" avec filtres âge).
 - Notes par film en UI.
 - Persistance des filtres en localStorage.
 
 V1.2 :
+
 - Posters TMDB (cache local des images).
 - Genres + filtres par genre.
 - Dark mode.
 
 V2 :
+
 - Multi-profils (sans auth, juste switch "Lou" / "Papa" / "Maman").
 - Import de listes externes (SensCritique, IMDB CSV).
 - PWA installable sur mobile.

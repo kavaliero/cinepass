@@ -7,11 +7,9 @@
     "target": "ES2022",
     "moduleResolution": "Bundler",
     "module": "ESNext",
-    "composite": true,
     "noEmit": true,
     "useDefineForClassFields": true,
     "types": ["vite/client"]
   },
-  "include": ["src/**/*", "tests/**/*"],
-  "references": [{ "path": "../../packages/shared" }]
+  "include": ["src/**/*", "tests/**/*"]
 }

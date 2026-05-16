@@ -37,6 +37,9 @@ jobs:
         working-directory: apps/api
         run: pnpm exec prisma generate
 
+      - name: Build shared package (necessaire pour la resolution de types)
+        run: pnpm --filter @cinepass/shared build
+
       - name: Typecheck
         run: pnpm typecheck
 

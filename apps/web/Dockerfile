@@ -18,8 +18,7 @@ COPY apps/api/package.json ./apps/api/
 COPY apps/web/package.json ./apps/web/
 COPY packages/shared/package.json ./packages/shared/
 COPY e2e/package.json ./e2e/
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
-    pnpm install --frozen-lockfile
+RUN pnpm install --frozen-lockfile
 
 COPY tsconfig.base.json tsconfig.json ./
 COPY packages/shared ./packages/shared

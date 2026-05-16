@@ -22,8 +22,7 @@ COPY apps/api/package.json ./apps/api/
 COPY apps/web/package.json ./apps/web/
 COPY packages/shared/package.json ./packages/shared/
 COPY e2e/package.json ./e2e/
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
-    pnpm install --frozen-lockfile
+RUN pnpm install --frozen-lockfile
 
 # ---------- Build ----------
 FROM deps AS build
@@ -48,8 +47,7 @@ WORKDIR /app
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 COPY apps/api/package.json ./apps/api/
 COPY packages/shared/package.json ./packages/shared/
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
-    pnpm install --frozen-lockfile --prod \
+RUN pnpm install --frozen-lockfile --prod \
  && pnpm --filter @cinepass/api exec prisma generate
 
 # Code build + assets Prisma + seed data + entrypoint

@@ -73,22 +73,39 @@ async function fetchJson(path) {
 }
 
 async function preflight() {
-  try {
-    const ctrl = new AbortController();
-    const timer = setTimeout(() => ctrl.abort(), 3000);
-    const headers = AUTH_HEADER ? { Authorization: AUTH_HEADER } : {};
-    await fetch(`${BASE}/api/health`, { signal: ctrl.signal, headers });
-    clearTimeout(timer);
-    return true;
-  } catch {
-    console.log(c('red', `\n  ${BASE} ne repond pas.\n`));
-    console.log(c('dim', '  Suggestions :'));
-    console.log(c('dim', '    - Stack Docker (port 8080) : make docker-up'));
-    console.log(c('dim', '    - Mode dev                 : make dev   puis  make smoke-dev'));
-    console.log(c('dim', '    - URL custom               : SMOKE_URL=https://... make smoke'));
-    console.log('');
-    return false;
+  // Retry pendant 30s (utile en CI juste apres un deploy ou Caddy/nginx
+  // peuvent prendre quelques secondes a refaire le proxy vers les containers).
+  const maxAttempts = 6;
+  const intervalMs = 5000;
+  for (let i = 1; i <= maxAttempts; i++) {
+    try {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 8000);
+      const headers = AUTH_HEADER ? { Authorization: AUTH_HEADER } : {};
+      const res = await fetch(`${BASE}/api/health`, { signal: ctrl.signal, headers });
+      clearTimeout(timer);
+      // 200 ou 401 (si auth) sont tous deux des "OK le serveur repond"
+      if (res.status === 200 || res.status === 401) return true;
+      console.log(
+        c('dim', `  preflight attempt ${i}/${maxAttempts} : HTTP ${res.status}, retry...`),
+      );
+    } catch (err) {
+      console.log(
+        c(
+          'dim',
+          `  preflight attempt ${i}/${maxAttempts} : ${err.message ?? 'fetch failed'}, retry...`,
+        ),
+      );
+    }
+    if (i < maxAttempts) await new Promise((r) => setTimeout(r, intervalMs));
   }
+  console.log(c('red', `\n  ${BASE} ne repond pas apres ${maxAttempts} tentatives.\n`));
+  console.log(c('dim', '  Suggestions :'));
+  console.log(c('dim', '    - Stack Docker (port 8080) : make docker-up'));
+  console.log(c('dim', '    - Mode dev                 : make dev   puis  make smoke-dev'));
+  console.log(c('dim', '    - URL custom               : SMOKE_URL=https://... make smoke'));
+  console.log('');
+  return false;
 }
 
 async function check(name, fn) {

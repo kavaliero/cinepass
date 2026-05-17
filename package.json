@@ -18,8 +18,9 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "pnpm -r run test",
+    "test": "pnpm --filter @cinepass/api --filter @cinepass/web --filter @cinepass/shared run test",
     "test:e2e": "pnpm --filter @cinepass/e2e run test",
+    "test:all": "pnpm -r run test",
     "db:reset": "pnpm --filter @cinepass/api run db:reset",
     "db:seed": "pnpm --filter @cinepass/api run db:seed",
     "prepare": "husky || true"

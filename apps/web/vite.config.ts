@@ -13,6 +13,17 @@ export default defineConfig({
       },
     },
   },
+  // pnpm preview (utilise en CI pour les e2e) : meme proxy /api que dev
+  preview: {
+    port: 4321,
+    strictPort: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+      },
+    },
+  },
   build: {
     outDir: 'dist',
     sourcemap: true,

@@ -82,6 +82,7 @@ jobs:
       - name: Setup database
         working-directory: apps/api
         run: |
+          pnpm exec prisma generate
           pnpm exec prisma migrate deploy
           pnpm db:seed
         env:

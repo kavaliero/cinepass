@@ -2,7 +2,7 @@
 # Build context = racine du monorepo (cf. docker-compose.yml).
 # Stage 1 : build avec Vite. Stage 2 : nginx servant les statics + proxy /api.
 
-ARG NODE_VERSION=20.11.0
+ARG NODE_VERSION=22.11.0
 ARG PNPM_VERSION=9.12.0
 
 # ---------- Build ----------

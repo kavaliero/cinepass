@@ -2,7 +2,7 @@
 # Build context = racine du monorepo (cf. docker-compose.yml).
 # Multi-stage : on installe les dev deps + on build, puis on copie juste le runtime.
 
-ARG NODE_VERSION=20.11.0
+ARG NODE_VERSION=22.11.0
 ARG PNPM_VERSION=9.12.0
 
 # ---------- Base ----------

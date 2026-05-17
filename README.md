@@ -15,7 +15,7 @@ Watchlist familiale de films cultes, **triés par tranche d'âge**. Pour savoir 
 
 ## Démarrage rapide
 
-Prérequis : **Node 20.11+** et **pnpm 9+**.
+Prérequis : **Node 22+** (ou 20.12+) et **pnpm 9+**.
 
 ```bash
 # 1. Installation

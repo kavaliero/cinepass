@@ -11,9 +11,11 @@ export function AgeSection({ bracket, films }: Props) {
   if (films.length === 0) return null;
 
   return (
-    <section className="space-y-3">
-      <h2 className="sticky top-0 z-10 -mx-4 bg-zinc-50/95 px-4 py-2 text-sm font-semibold uppercase tracking-wide text-zinc-700 backdrop-blur">
-        {meta.emoji} {meta.label} <span className="text-zinc-400">({films.length})</span>
+    <section className="space-y-4">
+      <h2 className="sticky top-0 z-10 -mx-4 flex items-baseline gap-3 bg-zinc-50/95 px-4 py-3 backdrop-blur">
+        <span className="text-3xl leading-none">{meta.emoji}</span>
+        <span className="text-xl font-bold tracking-tight text-zinc-900">{meta.label}</span>
+        <span className="text-base font-normal text-zinc-400">{films.length}</span>
       </h2>
       <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         {films.map((f) => (

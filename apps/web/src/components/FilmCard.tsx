@@ -6,10 +6,18 @@ interface Props {
   film: Film;
 }
 
-const STATUS_OVERLAY: Record<Film['status'], string> = {
+// Effet visuel sur la carte selon le statut
+const STATUS_CARD: Record<Film['status'], string> = {
   TO_WATCH: '',
-  WATCHED: 'ring-2 ring-emerald-500',
-  SKIP: 'opacity-40 grayscale',
+  WATCHED: 'ring-4 ring-emerald-500',
+  SKIP: 'opacity-30 grayscale',
+};
+
+// Style du badge en haut a droite
+const STATUS_BADGE: Record<Film['status'], string> = {
+  TO_WATCH: 'bg-white/90 text-base',
+  WATCHED: 'bg-emerald-500 text-white text-sm shadow-lg',
+  SKIP: 'bg-zinc-700/90 text-white text-sm',
 };
 
 export function FilmCard({ film }: Props) {
@@ -35,7 +43,7 @@ export function FilmCard({ film }: Props) {
       type="button"
       onClick={onClick}
       disabled={!isAuth || update.isPending}
-      className={`group relative flex w-full flex-col gap-1.5 text-left transition ${STATUS_OVERLAY[film.status]} ${!isAuth ? 'cursor-default' : 'cursor-pointer'}`}
+      className={`group relative flex w-full flex-col gap-1.5 text-left transition ${STATUS_CARD[film.status]} ${!isAuth ? 'cursor-default' : 'cursor-pointer'}`}
       title={title}
     >
       <div className="relative aspect-[2/3] w-full overflow-hidden rounded-md bg-zinc-200">
@@ -53,7 +61,7 @@ export function FilmCard({ film }: Props) {
           </div>
         )}
         <span
-          className="absolute right-1.5 top-1.5 rounded-full bg-white/90 px-1.5 py-0.5 text-base shadow-sm backdrop-blur-sm"
+          className={`absolute right-1.5 top-1.5 rounded-full px-1.5 py-0.5 font-medium backdrop-blur-sm transition ${STATUS_BADGE[film.status]}`}
           aria-label={meta.label}
         >
           {meta.emoji}
